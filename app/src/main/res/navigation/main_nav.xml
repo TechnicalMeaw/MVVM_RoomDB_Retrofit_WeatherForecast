@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav"
+    app:startDestination="@id/addDataFragment">
+
+    <fragment
+        android:name="com.example.mvvmroomdb.ui.addDataScreen.AddDataFragment"
+        android:id="@+id/addDataFragment"
+        tools:layout="@layout/fragment_add_data"
+        android:label="fragment_add_data"
+        />
+
+    <fragment
+        android:name="com.example.mvvmroomdb.ui.showAllScreen.ShowAllFragment"
+        android:id="@+id/showAllFragment"
+        tools:layout="@layout/fragment_show_all"
+        android:label="fragment_show_all"
+        />
+    <fragment
+        android:id="@+id/showRemoteUsersFragment"
+        android:name="com.example.mvvmroomdb.ui.showRemoteData.ShowRemoteUsersFragment"
+        android:label="fragment_show_remote_users"
+        tools:layout="@layout/fragment_show_remote_users" />
+    <fragment
+        android:id="@+id/weatherForecastFragment"
+        android:name="com.example.mvvmroomdb.ui.weather.WeatherForecastFragment"
+        android:label="fragment_weather_forecast"
+        tools:layout="@layout/fragment_weather_forecast" />
+
+</navigation>
